@@ -18,58 +18,67 @@
         </header>
 
         <nav>
-            <p><h2>Navegação</h2></p>
-            <ul>
+            <h2>Navegação</h2>
+            <select onchange="location = this.value;">
+                <option value="">Selecione uma seção</option>
+                <option value="#resumo">Resumo</option>
+                <option value="#experiencia">Experiência</option>
+                <option value="#formacao">Formação</option>
+                <option value="#habilidades">Habilidades</option>
+            </select>
+            <!-- <ul>
                 <li><a href="#resumo">Resumo</a></li>
                 <li><a href="#experiencia">Experiência</a></li>
                 <li><a href="#formacao">Formação</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#projetos">Projetos</a></li>
-            </ul>
+            </ul> -->
         </nav>
 
-        <section id="resumo">
-            <h2>Resumo</h2>
-            <p>Bacharel em Física Computacional e estudante de Desenvolvimento de Software Multiplataforma pela FATEC, com experiência em análise e integração de dados, automação de rotinas e melhoria de processos em ambiente industrial. Atuação com Python, SQL, Power BI e bancos de dados, envolvendo tratamento e organização de dados, desenvolvimento de dashboards e geração de indicadores para apoio à tomada de decisão. Possuo formação analítica e computacional, com conhecimentos em programação, estatística e modelagem de dados, além de experiência na compreensão e estruturação de processos de negócio. Atualmente direciono minha carreira para Tecnologia e Dados, buscando oportunidades em Análise de Dados, BI, Banco de Dados e Desenvolvimento de Software.  
-            </p>
-        </section>
+        <main>
+            <section id="resumo">
+                <h2>Resumo</h2>
+                <p>Bacharel em Física Computacional e estudante de Desenvolvimento de Software Multiplataforma pela FATEC, com experiência em análise e integração de dados, automação de rotinas e melhoria de processos em ambiente industrial. Atuação com Python, SQL, Power BI e bancos de dados, envolvendo tratamento e organização de dados, desenvolvimento de dashboards e geração de indicadores para apoio à tomada de decisão. Possuo formação analítica e computacional, com conhecimentos em programação, estatística e modelagem de dados, além de experiência na compreensão e estruturação de processos de negócio. Atualmente direciono minha carreira para Tecnologia e Dados, buscando oportunidades em Análise de Dados, BI, Banco de Dados e Desenvolvimento de Software.  
+                </p>
+            </section>
 
-        <section id="experiencia">
-            <h2>Experiência</h2>
-            <ul>
-                <li>Auxiliar de Produção - Rodamax (2023-2025)</li>
-                <li>Analista de Processos - Rodamax (2025-2026)</li>
-                <li>Almoxarife - MF Tech (2026)</li>
-            </ul>
-        </section>
-
-        <section id="formacao">
-            <h2>Formação</h2>
-            <ul>
-                <li>Bacharel em Física Computacional - UFF (2014-2022)</li>
-                <li>Desenvolvimento de Software Multiplataforma - FATEC (2026-2029)</li>
-            </ul>
-        </section>
-
-        <section id="habilidades">
-            <h2>Habilidades</h2>
-            <ul>
-                <li>Programação e Desenvolvimento de Software</li>
+            <section id="experiencia">
+                <h2>Experiência</h2>
                 <ul>
-                    <li>Python</li>
-                    <li>SQL</li>
-                    <li>Linux</li>
-                    <li>Git</li>
-                    <li>Power BI</li>
+                    <li>Auxiliar de Produção - Rodamax (2023-2025)</li>
+                    <li>Analista de Processos - Rodamax (2025-2026)</li>
+                    <li>Almoxarife - MF Tech (2026)</li>
                 </ul>
-                <li>Bancos de Dados</li>
-                <li>Automação de Rotinas</li>
-                <li>Análise de Dados</li>
-                <li>Google Planilhas</li>
-                <li>Pensamento Analítico</li>
-            </ul>
-        </section>
+            </section>
 
+            <section id="formacao">
+                <h2>Formação</h2>
+                <ul>
+                    <li>Bacharel em Física Computacional - UFF (2014-2022)</li>
+                    <li>Desenvolvimento de Software Multiplataforma - FATEC (2026-2029)</li>
+                </ul>
+            </section>
+
+            <section id="habilidades">
+                <h2>Habilidades</h2>
+                <ul>
+                    <li>Programação e Desenvolvimento de Software</li>
+                    <ul>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>Linux</li>
+                        <li>Git</li>
+                        <li>Power BI</li>
+                    </ul>
+                    <li>Bancos de Dados</li>
+                    <li>Automação de Rotinas</li>
+                    <li>Análise de Dados</li>
+                    <li>Google Planilhas</li>
+                    <li>Pensamento Analítico</li>
+                </ul>
+            </section>
+        </main>
+        
         <footer></footer>
     </body>
 </html>
