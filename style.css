@@ -1,0 +1,31 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    border: 1cap;
+    display: inline-block;
+    background-color: rgba(127, 255, 212, 0.6);
+}
+
+nav a{
+    display: inline;
+    color: rgba(89, 59, 119, 0.862);
+    border-width: 1%;
+    border: solid;
+}
+
+nav a:hover{
+    color: rgba(106, 91, 120, 0.832);
+}
+
+li {
+    padding-left: 20px;
+}
+
+body{
+    background-color: rgba(111, 109, 109, 0.373);
+}
