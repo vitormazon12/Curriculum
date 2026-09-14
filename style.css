@@ -2,30 +2,110 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
-    border: 1cap;
-    display: inline-block;
-    background-color: rgba(127, 255, 212, 0.6);
+/* Paleta de cores */
+:root {
+    --cor-principal: #1F4E79;
+    --cor-principal-escuro: #102F4C;
+    --cor-menu: #333333;
+    --cor-menu-hover: #4A4A4A;
+    --cor-fundo: #F3F4F6;
+    --cor-superficie: #FFFFFF;
+    --cor-texto: #222222;
+    --cor-texto-claro: #FFFFFF;
+    --cor-borda: #D1D5DB;
 }
 
-nav a{
-    display: inline;
-    color: rgba(89, 59, 119, 0.862);
-    border-width: 1%;
-    border: solid;
+ /* --- HEADER --- */
+#info {
+    display: flex; /* faz ficar lado a lado */
+    align-items: center; /* faz alinhamento do que está lado a lado para o centro, para a imagem e o texto ficarem centralizados na altura */
+    gap: 40px; /* gap entre a foto e o texto */
+    padding: 20px; 
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+    background-color: var(--cor-superficie);
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-nav a:hover{
-    color: rgba(106, 91, 120, 0.832);
+#info a{
+    color: var(--cor-principal); /* muda a cor do texto */
+    text-decoration: none; /* retira o sublinhado do link */
+    font-weight: 600; /* peso da fonte, 400 para normal, 600 seminegrito e 700 negrito */
+    margin-right: 10px; /* cria uma separação entre os links */
 }
 
-li {
-    padding-left: 20px;
+#info a:hover {
+    text-decoration: underline; /* coloca o underline quando o mouse está em cima */
+    color: var(--cor-principal-escuro); /* altera a cor */
 }
 
+.foto-perfil {
+    width: 180px;
+    height: 180px;
+    object-fit: cover; /* Esse comando serve para ajusatar a foto e não cortar as bordas */
+    border-radius: 100px;
+}
+
+
+ /* --- MENU --- */
+#menu{
+    background-color: var(--cor-menu);
+}
+
+#menu ul{
+    list-style-type: none; /*Faz sumirem as bolinhas*/
+    margin: 0 auto; /* faz ficar no centro a lista */
+    max-width: 1000px; /* limita o tamanho q pode ficar */
+    padding: 0;
+
+    display: flex; /*faz ficar lado a lado*/
+}
+
+#menu a {
+    display: block;
+
+    color: var(--cor-texto-claro);
+    text-decoration: none;
+    
+    padding: 14px 16px;
+}
+
+#menu a:hover{
+    background-color: var(--cor-menu-hover);
+}
+
+/* --- BODY --- */
 body{
-    background-color: rgba(111, 109, 109, 0.373);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* --- MAIN --- */
+main{
+    max-width: 1000px; /* limita o número de pixels para página, bom pra responsividade */
+    margin: 0 auto;
+    background-color: var(--cor-superficie);
+}
+
+/* --- SEÇÕES --- */
+section {
+    padding: 20px; /* espaçamento lateral das seções */
+    border-bottom: 1px solid var(--cor-borda); /* deixa uma linha separando cada seção */
+}
+
+section h2{
+    color: var(--cor-principal-escuro);
+    margin-bottom: 8px; /* deixa o h2 com espaçamento do texto q vem a seguir */
+}
+
+section ul{
+    padding-left: 20px; /* afasta os itens da lista à esquerda */
+}
+
+section p{
+    line-height: 1.5; /* espaçamento entre linhas da seção */
+}
+
