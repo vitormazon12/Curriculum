@@ -45,7 +45,7 @@
     width: 180px;
     height: 180px;
     object-fit: cover; /* Esse comando serve para ajusatar a foto e não cortar as bordas */
-    border-radius: 100px;
+    border-radius: 100px; /* Faz a foto cortar redondamente */
 }
 
 
@@ -58,8 +58,6 @@
     list-style-type: none; /*Faz sumirem as bolinhas*/
     margin: 0 auto; /* faz ficar no centro a lista */
     max-width: 1000px; /* limita o tamanho q pode ficar */
-    padding: 0;
-
     display: flex; /*faz ficar lado a lado*/
 }
 
@@ -103,9 +101,11 @@ section h2{
 
 section ul{
     padding-left: 20px; /* afasta os itens da lista à esquerda */
+    list-style-type: "- ";
 }
 
 section p{
     line-height: 1.5; /* espaçamento entre linhas da seção */
+    text-align: justify; /* deixa texto justificado */
 }
 
