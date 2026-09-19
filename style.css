@@ -20,13 +20,20 @@
  /* --- HEADER --- */
 #info {
     display: flex; /* faz ficar lado a lado */
-    align-items: center; /* faz alinhamento do que está lado a lado para o centro, para a imagem e o texto ficarem centralizados na altura */
+    flex-direction: row;
+    justify-content: center; /* faz alinhamento do que está lado a lado para o centro, para a imagem e o texto ficarem centralizados na altura */
     gap: 40px; /* gap entre a foto e o texto */
     padding: 20px; 
     font-family: "Trebuchet MS", "Segoe UI", sans-serif;
     background-color: var(--cor-superficie);
     max-width: 1000px;
     margin: 0 auto;
+}
+
+#info {
+    display: flex;
+    justify-content: left;
+    align-items: center ;
 }
 
 #info a{
@@ -52,13 +59,20 @@
  /* --- MENU --- */
 #menu{
     background-color: var(--cor-menu);
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 #menu ul{
     list-style-type: none; /*Faz sumirem as bolinhas*/
     margin: 0 auto; /* faz ficar no centro a lista */
-    max-width: 1000px; /* limita o tamanho q pode ficar */
-    display: flex; /*faz ficar lado a lado*/
+    max-width: 800px; /* limita o tamanho q pode ficar */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#menu li {
+    display: inline-block; /*faz ficar lado a lado*/
 }
 
 #menu a {
@@ -109,3 +123,6 @@ section p{
     text-align: justify; /* deixa texto justificado */
 }
 
+.subitens {
+    list-style-type: "+ ";
+}
