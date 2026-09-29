@@ -21,19 +21,14 @@
 #info {
     display: flex; /* faz ficar lado a lado */
     flex-direction: row;
-    justify-content: center; /* faz alinhamento do que está lado a lado para o centro, para a imagem e o texto ficarem centralizados na altura */
+    justify-content: left; /* faz alinhamento do que está lado a lado para o centro, para a imagem e o texto ficarem centralizados na altura */
     gap: 40px; /* gap entre a foto e o texto */
     padding: 20px; 
     font-family: "Trebuchet MS", "Segoe UI", sans-serif;
     background-color: var(--cor-superficie);
     max-width: 1000px;
-    margin: 0 auto;
-}
-
-#info {
-    display: flex;
-    justify-content: left;
-    align-items: center ;
+    margin: 0 auto; /* centraliza o header */
+    align-items: center;
 }
 
 #info a{
@@ -51,7 +46,7 @@
 .foto-perfil {
     width: 180px;
     height: 180px;
-    object-fit: cover; /* Esse comando serve para ajusatar a foto e não cortar as bordas */
+    object-fit: cover; /* Esse comando serve para ajustar a foto e não cortar as bordas */
     border-radius: 100px; /* Faz a foto cortar redondamente */
 }
 
@@ -65,23 +60,22 @@
 
 #menu ul{
     list-style-type: none; /*Faz sumirem as bolinhas*/
-    margin: 0 auto; /* faz ficar no centro a lista */
-    max-width: 800px; /* limita o tamanho q pode ficar */
+    /* margin: 0 auto; */ /* faz ficar no centro a lista */
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center; /* faz ficar no centro a lista */
 }
 
 #menu li {
-    display: inline-block; /*faz ficar lado a lado*/
+    display: flex; /*faz ficar lado a lado*/
+    flex-direction: row;
+    justify-content: left; /* faz ficar no centro a lista */
 }
 
 #menu a {
     display: block;
-
     color: var(--cor-texto-claro);
     text-decoration: none;
-    
-    padding: 14px 16px;
+    padding: 10px 16px;
 }
 
 #menu a:hover{
@@ -115,14 +109,26 @@ section h2{
 
 section ul{
     padding-left: 20px; /* afasta os itens da lista à esquerda */
-    list-style-type: "- ";
+    list-style-type: "• ";
 }
 
 section p{
     line-height: 1.5; /* espaçamento entre linhas da seção */
     text-align: justify; /* deixa texto justificado */
+    margin-left: 20px; /* afasta o texto da esquerda */
+    margin-right: 20px; /* afasta o texto da direita */
+    margin-bottom: 10px; /* afasta o texto de baixo */
+}
+
+.lista p{
+    margin-right: 50px; /* afasta o texto da direita */
+    margin-left: 30px; /* cria um espaçamento entre os itens da lista */
+}
+
+.lista li{
+    font-weight: 600; /* deixa o texto em negrito */
 }
 
 .subitens {
-    list-style-type: "+ ";
+    list-style-type: "◦ "; /* muda o tipo de bolinha da lista */
 }
