@@ -55,20 +55,19 @@
 #menu{
     background-color: var(--cor-menu);
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
 #menu ul{
     list-style-type: none; /*Faz sumirem as bolinhas*/
-    /* margin: 0 auto; */ /* faz ficar no centro a lista */
     display: flex;
-    justify-content: center; /* faz ficar no centro a lista */
+    flex-direction: row;
 }
 
 #menu li {
-    display: flex; /*faz ficar lado a lado*/
-    flex-direction: row;
-    justify-content: left; /* faz ficar no centro a lista */
+    justify-content: center; /* faz ficar no centro a lista */
+    flex: 1; /* faz os itens da lista ocuparem o mesmo espaço */
+    text-align: center; /* faz o texto ficar centralizado */
 }
 
 #menu a {
