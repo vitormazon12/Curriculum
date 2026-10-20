@@ -8,6 +8,8 @@
 :root {
     --cor-principal: #1F4E79;
     --cor-principal-escuro: #102F4C;
+    --cor-destaque: #97aaff;
+    --cor-destaque-claro: #d4daf3;
     --cor-menu: #333333;
     --cor-menu-hover: #4A4A4A;
     --cor-fundo: #F3F4F6;
@@ -22,17 +24,33 @@
     display: flex; /* faz ficar lado a lado */
     flex-direction: row;
     justify-content: left; /* faz alinhamento do que está lado a lado para o centro, para a imagem e o texto ficarem centralizados na altura */
-    gap: 40px; /* gap entre a foto e o texto */
+    gap: 20px; /* gap entre a foto e o texto */
     padding: 20px; 
     font-family: "Trebuchet MS", "Segoe UI", sans-serif;
-    background-color: var(--cor-superficie);
     max-width: 1000px;
     margin: 0 auto; /* centraliza o header */
     align-items: center;
+    color: var(--cor-texto-claro);
+
+    background-image: url('Imagens/CapaLinkedIn.jfif'); /* adiciona a imagem de fundo */
+    background-size: cover; /* faz a imagem cobrir todo o header */
+    background-position: center; /* centraliza a imagem */
+    width: 100%;
+}
+
+#info p {
+    margin-bottom: 5px; /* cria um espaçamento entre os parágrafos */
+}
+
+#info h1 {
+    font-size: 2.5rem; /* tamanho da fonte */
+    margin-bottom: 5px; /* cria um espaçamento entre o h1 e o texto */
+    font-weight: 700; /* peso da fonte, 400 para normal, 600 seminegrito e 700 negrito */
+    color: var(--cor-texto-claro); /* muda a cor do texto */
 }
 
 #info a{
-    color: var(--cor-principal); /* muda a cor do texto */
+    color: var(--cor-texto-claro); /* muda a cor do texto */
     text-decoration: none; /* retira o sublinhado do link */
     font-weight: 600; /* peso da fonte, 400 para normal, 600 seminegrito e 700 negrito */
     margin-right: 10px; /* cria uma separação entre os links */
@@ -40,7 +58,7 @@
 
 #info a:hover {
     text-decoration: underline; /* coloca o underline quando o mouse está em cima */
-    color: var(--cor-principal-escuro); /* altera a cor */
+    color: var(--cor-destaque); /* altera a cor */
 }
 
 .foto-perfil {
@@ -56,6 +74,8 @@
     background-color: var(--cor-menu);
     max-width: 1000px;
     margin: 0px auto;
+    position: sticky;
+    top: 0;
 }
 
 #menu ul{
@@ -130,4 +150,10 @@ section p{
 
 .subitens {
     list-style-type: "◦ "; /* muda o tipo de bolinha da lista */
+}
+
+#botao-topo {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
 }
